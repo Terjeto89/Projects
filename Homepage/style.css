@@ -1,23 +1,55 @@
 h1{
-    font-family:
-margin: 10px;
-padding:20px ;
+font-family: 'Rubik Glitch Pop', sans-serif;
+background: linear-gradient(45deg, blue,red,yellow);
+padding:20px;
 border-width: 20px;
 border-style: solid;
 border-color: blue red yellow;
-color: black;
+color:yellow;
+font
 background-color: white;}
 h2{
-    font-style: oblique;
+font-style: oblique;
 }
 body{
-font-family: '', Times, serif;
+font-family: rubik Glitch Pop;   
+background-color: blue;
+font-size: 20px;
+background: linear-gradient(45deg, blue,red,yellow);
 }
 img{
     max-width: 50%;
     height: auto;
 }
-button{
-    padding: 5px;
-    background-color: aqua;
+pre{
+    font-size: 30px;
 }
+.image-container{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.small-image{
+    max-width: 50%;
+    height: auto; 
+    margin-right: 50px;
+
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    background-color: red;
+    color:black;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.2);}
+    .button:hover{
+        background-color: aqua;
+        border-color: red;
+    }
