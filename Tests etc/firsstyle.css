@@ -1,0 +1,14 @@
+.Para{
+    font-size: 20px;
+    color: blue;
+}
+.Parag{
+color: red;
+font-size: 30px;
+}
+
+p:hover {
+    background-color: black;
+}
+
+p:hover::
