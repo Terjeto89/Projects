@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Crafts Villa - Creativity, bonding, and relaxation</title>
+	<meta name="description" content="A Glimpse into the Craftsvilla Magic. Discover your artistic expression with unique kits. Each holds the potential for a personal masterpiece.">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body id="home">
+<header>
+	<span><a href="#home">Crafts Villa</a></span>
+	<nav>
+		<a href="#products">Products</a>
+		<a href="#gallery">Gallery</a>
+		<a href="#reviews">Reviews</a>
+		<a href="#feedback">Feedback</a>
+	</nav>
+	<button>Booking</button>
+</header>
+<div class="header-mobile">
+	<div id="mobile-menu" class="hidden">
+		<ul>
+			<li class="mobile-menu-logo"><a href="#home"  onclick="toggleMenu()">Crafts Villa</a></li>
+			<li><a href="#home"  onclick="toggleMenu()">Home</a></li>
+			<li><a href="#products"  onclick="toggleMenu()">Products</a></li>
+			<li><a href="#gallery"  onclick="toggleMenu()">Gallery</a></li>
+			<li><a href="#reviews"  onclick="toggleMenu()">Reviews</a></li>
+			<li><a href="#feedback"  onclick="toggleMenu()">Feedback</a></li>
+		</ul>
+	</div>
+	<div class="mobile-logo">
+		<a href="#home">Crafts Villa</a>
+	</div>
+	<button id="mobile-menu-btn" class="menu-btn-closed" onclick="toggleMenu()">
+		<img src="./images/menu-icon.svg" id="menu-open-icon" class="visible" alt="Open Menu Icon">
+		<img src="./images/menu-close-icon.svg" id="menu-close-icon" class="hidden" alt="Open Close Icon">
+	</button>
+</div>
+<main>
+	<section class="first-screen">
+		<div class="image-container">
+			<img src="images/girls-with-pencil.svg" alt="Girls with Pencil">
+			<img src="./images/stars.svg" alt="Stars Icon" class="stars">
+			<img src="./images/stars-2.svg" alt="Stars Icon" class="stars-2">
+		</div>
+		<div class="container">
+			<h1>
+				creativity, bonding, and relaxation
+			</h1>
+			<p>Choose something that inspires you</p>
+			<a href="#products"><button class="button-1">Book Activity Now</button></a>
+		</div>
+	</section>
+
+	<section class="booking" id="products">
+		<div class="container">
+		<h2>A Glimpse into the Craftsvilla Magic</h2>
+		<p>Discover your artistic expression with unique kits. Each holds the potential for a personal masterpiece. More options coming soon!</p>
+		<div>
+			<div>
+				<div class="booking-image-container">
+					<img src="images/product-mosaic-art.svg" alt="Product Mosaic Art">
+					<img src="images/leg-r.svg" alt="Leg Right" class="leg-r">
+					<img src="images/leg-l.svg" alt="Leg Left" class="leg-l">
+				</div>
+				<div class="product-row">
+					<h3>Mosaic Art</h3>
+					<span>400 kr</span>
+				</div>
+				<p>Create vibrant mosaics with colorful stones & high-quality glue!</p>
+				<button class="button-2">Book Activity</button>
+			</div>
+			<div>
+				<div class="booking-image-container">
+					<img src="images/product-watercolor-painting.svg" alt="Product Watercolor Painting">
+					<img src="images/check.svg" alt="Stars Icon" class="check">
+					<img src="images/stars-5.svg" alt="Stars Icon" class="stars-5">
+					<img src="images/stars-6.svg" alt="Stars Icon" class="stars-6">
+				</div>
+				<div class="product-row">
+					<h3>Watercolor Painting</h3>
+					<span>200 kr</span>
+				</div>
+				<p>Explore gentle watercolors with paper, paints & brushes!</p>
+				<button class="button-2">Book Activity</button>
+			</div>
+			<div class="last-booking">
+				<div class="booking-image-container">
+					<img src="images/product-canvas-painting.svg" alt="Product Canvas Painting">
+					<img src="images/stars-3.svg" alt="Stars Icon" class="stars-3">
+					<img src="images/stars-4.svg" alt="Stars Icon" class="stars-4">
+					<img src="images/gear.svg" alt="Gear Icon"  class="gear-1">
+					<img src="images/gear.svg" alt="Gear Icon" class="gear-2">
+				</div>
+				<div class="product-row">
+					<h3>Canvas Painting</h3>
+					<span>300 kr</span>
+				</div>
+				<p>Unleash bold strokes with primed canvas, acrylics & sturdy brushes!</p>
+				<button class="button-2">Book Activity</button>
+			</div>
+		</div>
+		</div>
+	</section>
+
+	<section id="gallery">
+		<div class="gallery-left">
+			<h2>Craftsvilla Creations: See What Others Have Made</h2>
+			<p>Explore our gallery to see the diverse and beautiful art pieces created by our talented customers. Get inspired and discover your own artistic potential.</p>
+		</div>
+		<div class="gallery-right">
+			<img src="./images/transparent.png" alt="Namaste Relaxation Class" id="image">
+			<p class="opacity-0">Namaste - relaxation class</p>
+		</div>
+	</section>
+
+	<section id="reviews">
+		<h2>Reviews</h2>
+		<div>
+			<div class="review-not-active">
+				<h3>Perfect kids' party</h3>
+				<span>"Craftsvilla's painting party was a hit for my kid's birthday! Engaged kids, friendly staff, clean space. Will definitely recommend!"</span>
+				<p>- David (with young children)</p>
+			</div>
+			<div class="review-active static-active">
+				<h3>Fun with friends</h3>
+				<span>"Mosaic workshop with friends at Craftsvilla was amazing! Great instructor, quality kits, and tons of fun. Highly recommend!"</span>
+				<p>- Sarah (group outing)</p>
+			</div>
+			<div class="review-active" id="review-container">
+				<h3 id="review-title" class="review-content"></h3>
+				<span id="review-text" class="review-content"></span>
+				<p id="review-author" class="review-content"></p>
+			</div>
+			<div class="review-not-active">
+				<h3>Creative team bonding</h3>
+				<span>"Our corporate team loved the watercolor workshop at Craftsvilla! Learned new skills, laughed together, and created beautiful art."</span>
+				<p>- Maria (corporate team)</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="feedback" id="feedback">
+		<div class="feedback-container">
+			<div class="feedback-left">
+				<h2>Your Feedback Makes A Difference</h2>
+				<p>Let us know what you think about Craftsvilla! Your feedback helps us shape the future of our workshops and kits.</p>
+			</div>
+			<div class="feedback-center">
+					<div class="feedback-form-col">
+						<label for="name">Name</label>
+						<input type="text" id="name" placeholder="Your Name" autocomplete="on">
+					</div>
+					<div class="feedback-form-col">
+						<label for="contact-number">Contact Number</label>
+						<input type="text" id="contact-number" placeholder="+47 000 00 00">
+					</div>
+
+				<div class="feedback-form-col">
+					<label for="email">Email Address</label>
+					<input type="text" id="email" placeholder="xyz123@gmail.com" autocomplete="on">
+				</div>
+				<label for="comment">How satisfied are you?</label>
+				<div class="feedback-form-smiles-row">
+					<div>
+						<img src="./images/Worst-b.svg" data-inactive="./images/Worst-b.svg" data-active="./images/Worst-c.svg" class="smile-img" width="40" height="40" alt="" onclick="toggleActiveSmile(this)">
+					</div>
+					<div>
+						<img src="./images/NotGood-b.svg" data-inactive='./images/NotGood-b.svg'
+								data-active='./images/NotGood-c.svg' class="smile-img" width="40" height="40" alt="" onclick="toggleActiveSmile(this)">
+					</div>
+					<div>
+						<img src="./images/Fine-b.svg" data-inactive='./images/Fine-b.svg'
+								data-active='./images/Fine-c.svg' class="smile-img" width="40" height="40" alt="" onclick="toggleActiveSmile(this)">
+					</div>
+					<div>
+						<img src="./images/LookGood-b.svg" data-inactive='./images/LookGood-b.svg'
+								data-active='./images/LookGood-c.svg'  class="smile-img" width="40" height="40" alt="" onclick="toggleActiveSmile(this)">
+					</div>
+					<div>
+						<img src="./images/VeryGood-c.svg" data-inactive='./images/VeryGood-b.svg'
+								data-active='./images/VeryGood-c.svg' class="smile-img" width="40" height="40" alt="" onclick="toggleActiveSmile(this)">
+					</div>
+				</div>
+				<textarea id="comment" name="comment" placeholder="Write your comment..." rows="4"></textarea>
+				<button class="button-3">Submit</button>
+			</div>
+			<div class="feedback-image-container">
+				<img src="images/feedback-lady.svg" alt="Feedback Lady">
+				<img src="./images/star.svg" alt="Star Icon" class="star-1">
+				<img src="./images/star.svg" alt="Star Icon" class="star-2">
+				<img src="./images/star.svg" alt="Star Icon" class="star-3">
+				<img src="./images/eye.svg" alt="Eye Icon" class="eye">
+				<img src="./images/lines.svg" alt="Lines Icon" class="lines">
+			</div>
+		</div>
+	</section>
+</main>
+<footer>
+	The project was worked on by:
+	<a href="https://github.com/Soulstices" target=”_blank”>Hennadii</a>,
+	<a href="https://github.com/Terjeto89" target=”_blank”>Terje</a>,
+	<a href="https://github.com/Martin-v-03" target=”_blank”>Martin</a>,
+	<a href="https://github.com/Yevhen23surfer" target=”_blank”>Yevhen</a>
+	<p class="opacity-50">Crafts Villa</p>
+</footer>
+<script src="./script.js"></script>
+</body>
+</html>
